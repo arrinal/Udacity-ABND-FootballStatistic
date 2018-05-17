@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Football Statistic</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="goal">Goal!</string>
+    <string name="fouls">Fouls</string>
+    <string name="yellowCards">Yellow Cards</string>
+    <string name="redCards">Red Cards</string>
+    <string name="nol">0</string>
+    <string name="addYellowCard">+1 Yellow Card</string>
+    <string name="addRedCard">+1 Red Card</string>
+    <string name="reset">Reset</string>
+</resources>

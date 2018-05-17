@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/field"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/home_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="home_clickGoal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/goal"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/fouls"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/home_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="home_clickFouls"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/fouls"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/yellowCards"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/home_yellowCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="home_clickYellowCard"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/addYellowCard"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/redCards"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/home_redCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="home_clickRedCard"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                android:text="@string/addRedCard"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:gravity="center_horizontal"
+                android:text="@string/away"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/away_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#99000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="away_clickGoal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/goal"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/fouls"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/away_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="away_clickFouls"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/fouls"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/yellowCards"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/away_yellowCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="away_clickYellowCard"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/addYellowCard"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/redCards"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/away_redCards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#90000000"
+                android:gravity="center_horizontal"
+                android:text="@string/nol"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="away_clickRedCard"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                android:text="@string/addRedCard"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="reset"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/reset"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
